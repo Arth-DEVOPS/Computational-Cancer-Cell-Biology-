@@ -1,0 +1,47 @@
+
+# lines starting with the # symbol are comments
+
+
+#
+# T-cell large granular lymphocyte leukemia model
+#
+# Node initialization below, 
+# ( all other nodes are set to false inside the program)
+#
+
+#Stimuli = IAP = Mcl1 = BclxL = PIAS = True
+GF = True
+# RTK = Random
+# RAS = Random
+# PI3K = Random
+# BRAF = Random
+# PIP3 = Random
+# MEK = Random
+# AKT = Random
+# TF = Random
+
+
+#
+# Model specification syntax
+#
+# rank: new-node1 *=  node1 and node2 or node3  ... etc
+#
+# the first number is the rank (all are set to 1 here)
+#
+# 1: A *= A or B
+#
+# means that the new value of A is equal to the old values 
+# of A and B combined with the operator 'or'
+#
+# model starts below
+#
+1: GF *= GF
+2: RTK *= GF
+3: RAS *= RTK
+3: PI3K *= RTK or RAS
+4: BRAF *= RAS
+4: PIP3 *= PI3K
+5: MEK *= BRAF
+5: AKT *= PIP3
+6: TF *= AKT and MEK
+
