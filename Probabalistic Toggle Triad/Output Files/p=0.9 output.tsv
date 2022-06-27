@@ -1,0 +1,10 @@
+State	Frequency
+
+For Probability p =	0.9
+
+[False, True, False]	2625
+[True, False, False]	2550
+[True, False, True]	745
+[False, True, True]	729
+[False, False, True]	2625
+[True, True, False]	726
