@@ -29,3 +29,7 @@ There are two forms of toggle triad that we will consider
 ; C = !A | !B
 
 Each form gives rise to different types of steady states. First, simulate both forms asynchronously and obtain the steady states and the corresponding frequencies. The frequency of a steady state is the number of times a simulation converges to that steady state. Simulation here should start from a random initial condition. Then, construct a PBN such that, Form 1 takes probability p and Form 2 takes probability 1-p. Simulate the PBN and obtain the steady state frequency distribution for different values of p. How does the frequency distribution change as p changes? Simulate each BN for 100 random initial conditions atleast and get the frequency distributions.
+
+## Trajectories for toggle switch with perturbation probability
+
+We now define a new probability called the perturbation probability. At every time point, we make a choice of whether or not to perturb a node. If yes, we flip the level of a chosen node. Use the perturbation probability in conjunction with update probability and simulate the toggle switch for 1000 time steps. Repeat for 100 times to get a mean expression level trajectory of node A of the toggle switch (similar to the figure you reproduced from Reka's paper). For update probability of 0.1, calculate the trajectories for perturbation probability of 0.1, 0.3, 0.5, 0.7 and 0.9 and plot them together. Repeat for update probability of 0.9.
