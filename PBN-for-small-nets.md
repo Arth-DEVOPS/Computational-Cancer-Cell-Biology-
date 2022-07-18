@@ -33,3 +33,37 @@ Each form gives rise to different types of steady states. First, simulate both f
 ## Trajectories for toggle switch with perturbation probability
 
 We now define a new probability called the perturbation probability. At every time point, we make a choice of whether or not to perturb a node. If yes, we flip the level of a chosen node. Use the perturbation probability in conjunction with update probability and simulate the toggle switch for 1000 time steps. Repeat for 100 times to get a mean expression level trajectory of node A of the toggle switch (similar to the figure you reproduced from Reka's paper). For update probability of 0.1, calculate the trajectories for perturbation probability of 0.1, 0.3, 0.5, 0.7 and 0.9 and plot them together. Repeat for update probability of 0.9.
+
+## Analysis for toggle triad and asymmetric 3-node network
+
+Perform the update probability and perturbation probability analysis for toggle triad and the networks below:
+
+### Netowrk 1
+
+>A = !B & !C
+; B = C & !A
+; C = !A & B
+
+### Network 2
+
+>A = !B & !C
+; B = C & !A
+; C = !A
+
+### Network 3
+
+>A = !B & !C
+; B = !C & !A
+; C = !A
+
+### Network 4
+
+>A = !B & A
+; B = !A
+
+### Network 5
+
+>A = !B & A
+; B = !A & B
+
+
