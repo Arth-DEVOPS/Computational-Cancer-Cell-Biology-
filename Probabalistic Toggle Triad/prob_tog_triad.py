@@ -62,7 +62,7 @@ def main():
         s1 = []
         ctr = 0
 
-        while ctr < 10000:
+        while ctr < 30000:
             
             A = random.choice([True, False])
             B = random.choice([True, False])
@@ -114,7 +114,7 @@ def main():
 
         
         l_entry = ["State","Frequency"]
-        with open("p=" + str(p[p_trav]) + " output.tsv", "w") as csvfile:
+        with open("p=" + str(p[p_trav]) + " averaged_output.tsv", "w") as csvfile:
             writer = csv.writer(csvfile, dialect="excel-tab")
             writer.writerow(l_entry) 
             writer.writerow([])
